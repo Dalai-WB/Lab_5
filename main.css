@@ -5,6 +5,9 @@
 .fa-bars, h1 {
     color:white;
 }
+ul, li ,a {
+    text-decoration: none;
+}
 .navbar {
     background-color: #6b46f3;
     /* height: 100px; */
@@ -90,22 +93,25 @@ input {
     padding-right: 35%;
     padding-left: 35%;
 }
+.search-container {
+    padding: 0.8em 0em;
+}
 .search-input {
-    display:table-cell;
-    width: 98%;
-    float:left;
-    border-radius: 5px;
-    height: 35px;
-    border:1px solid;
-    margin-right:3px;
-    z-index: 10;
+    flex-grow: 1;
+    border: 0;
+    padding: 16px 10px
 }
 .search-bar {
-    padding: 15px;
-    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2px;
 }
 .search-icon {
     color:#1d49e8;
+    margin-right: 5px;
 }
 .menu-text {
     color:black;
